@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org"
+        xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Spring Security SSO</title>
@@ -11,6 +12,9 @@
 <div class="container">
 	<div class="col-sm-12">
 		<h1>Spring Security SSO</h1>
+        <!--<div th:if="${#authentication.name != 'anonymousUser'}">-->
+            <a class="btn btn-primary" href="/member/list">列表</a>
+        <!--</div>-->
 		<span th:text="${#authentication.name}">Name</span>
 	</div>
 </div>

@@ -11,6 +11,9 @@
 <div class="container">
 	<div class="col-sm-12">
 		<h1>Spring Security SSO</h1>
+        <!--<div th:if="${#authentication.name != 'anonymousUser'}">-->
+            <a class="btn btn-primary" href="/coupon/list">列表</a>
+        <!--</div>-->
 		<span th:text="${#authentication.name}">Name</span>
 	</div>
 </div>
