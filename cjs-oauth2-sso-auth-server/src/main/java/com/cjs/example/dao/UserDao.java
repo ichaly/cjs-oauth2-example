@@ -35,11 +35,11 @@ public class UserDao {
     public SysUser selectByName(String username) {
         log.info("从数据库中查询用户");
         if ("zhangsan".equals(username)) {
-            SysUser sysUser = new SysUser("zhangsan", "$2a$10$aZDOWYEvK06TrxN6g0Mta.X3gtnj1sHPReRic5YRcOiXl4yMctwS6");
+            SysUser sysUser = new SysUser("zhangsan", "$2a$10$4pAYIR58.Uo9X7NlrAN6culoAvoet5Sh35FTkhobtA7GAzf7X4R2u");
             sysUser.setRoleList(Arrays.asList(admin, developer));
             return sysUser;
         }else if ("lisi".equals(username)) {
-            SysUser sysUser = new SysUser("lisi", "$2a$10$aZDOWYEvK06TrxN6g0Mta.X3gtnj1sHPReRic5YRcOiXl4yMctwS6");
+            SysUser sysUser = new SysUser("lisi", "$2a$10$4pAYIR58.Uo9X7NlrAN6culoAvoet5Sh35FTkhobtA7GAzf7X4R2u");
             sysUser.setRoleList(Arrays.asList(developer));
             return sysUser;
         }
