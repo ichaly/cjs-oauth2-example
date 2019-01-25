@@ -10,10 +10,10 @@ security:
     client:
       client-id: CouponSystem
       client-secret: 12345
-      access-token-uri: http://localhost:8080/oauth/token
-      user-authorization-uri: http://localhost:8080/oauth/authorize
+      access-token-uri: http://127.0.0.1:8080/oauth/token
+      user-authorization-uri: http://127.0.0.1:8080/oauth/authorize
     resource:
-      user-info-uri: http://localhost:8080/user/me
+      user-info-uri: http://127.0.0.1:8080/user/me
 logging:
   level:
     root: debug

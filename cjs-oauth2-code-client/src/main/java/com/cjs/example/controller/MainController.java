@@ -20,6 +20,6 @@ public class MainController {
 
     @GetMapping("/hello")
     public String hello() {
-        return oAuth2RestTemplate.getForObject("http://localhost:8080/sayHi", String.class);
+        return oAuth2RestTemplate.getForObject("http://127.0.0.1:8080/sayHi", String.class);
     }
 }
