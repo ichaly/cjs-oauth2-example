@@ -40,7 +40,7 @@ public class MemberController {
         member1.setCode("1001");
         member1.setMobile("15812346723");
         member1.setGender(1);
-        List<Member> list = new ArrayList<>();
+        List<Member> list = new ArrayList();
         list.add(member);
         list.add(member1);
         return list;
