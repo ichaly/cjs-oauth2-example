@@ -9,7 +9,7 @@ security:
   oauth2:
     client:
       client-id: MemberSystem
-      client-secret: 12345
+      client-secret: 123456
       access-token-uri: http://127.0.0.1:8080/oauth/token
       user-authorization-uri: http://127.0.0.1:8080/oauth/authorize
     resource:

@@ -23,7 +23,7 @@ public class UiSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     public void configure(WebSecurity web) throws Exception {
-        web.ignoring().antMatchers("/**/*.ico");
+        web.ignoring().antMatchers("/**/*.ico", "/error**");
     }
 
 }

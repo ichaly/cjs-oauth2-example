@@ -15,15 +15,15 @@ public class UiSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     public void configure(HttpSecurity http) throws Exception {
         http.csrf().disable().antMatcher("/**")
-                .authorizeRequests()
-                .antMatchers("/", "/login**").permitAll()
-                .anyRequest()
-                .authenticated();
+            .authorizeRequests()
+            .antMatchers("/", "/login**").permitAll()
+            .anyRequest()
+            .authenticated();
     }
 
     @Override
     public void configure(WebSecurity web) throws Exception {
-        web.ignoring().antMatchers("/**/*.ico");
+        web.ignoring().antMatchers("/**/*.ico", "/error**");
     }
 
 }
